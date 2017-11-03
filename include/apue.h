@@ -1,3 +1,8 @@
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 /*
  * Our own header, to be included before all standard system headers.
  */
@@ -131,3 +136,8 @@ void	WAIT_PARENT(void);
 void	WAIT_CHILD(void);
 
 #endif	/* _APUE_H */
+
+
+#ifdef __cplusplus
+}
+#endif
