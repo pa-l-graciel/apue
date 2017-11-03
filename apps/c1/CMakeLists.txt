@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-include(${CMAKE_SOURCE_DIR}/../../common.cmake)
+include(./../../common.cmake)
 include_directories(${CMAKE_SOURCE_DIR}/../../include)
 link_directories(${CMAKE_SOURCE_DIR}/../../lib)
 
