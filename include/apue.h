@@ -48,6 +48,8 @@ typedef	void	Sigfunc(int);	/* for signal handlers */
 #define	min(a,b)	((a) < (b) ? (a) : (b))
 #define	max(a,b)	((a) > (b) ? (a) : (b))
 
+extern int log_to_stderr;
+
 /*
  * Prototypes for our own functions.
  */
