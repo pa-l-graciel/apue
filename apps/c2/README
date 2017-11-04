@@ -1,0 +1,5 @@
+예제 2.14 테스트 방법
+$ awk -f makeconf.awk > 2.14_limits.cpp
+$ cmake .
+$ make
+$ ./2.14_limits ./
