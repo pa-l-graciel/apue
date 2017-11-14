@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 2.6)
 include(./../../common.cmake)
 include_directories(${CMAKE_SOURCE_DIR}/../../include)
 link_directories(${CMAKE_SOURCE_DIR}/../../lib)
+set(CMAKE_BUILD_TYPE Debug)
 
 # .cpp인 소스코드들을 자동으로 개별 빌드
 SRCLIST(cpp_list ${CMAKE_SOURCE_DIR})
