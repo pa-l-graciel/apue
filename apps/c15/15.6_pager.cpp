@@ -7,8 +7,8 @@
 /bin/more는stdin을받으면내용을stdout으로출력한다.
 부모는 a.out의 내용을 읽어서 파이프에 쓰고,
 자식은 파이프를 읽는다. 이 때 자식은 미리 dup2를 호출하여,
-STDIN_FILENO은 읽기파이프의 복제본으로 교체되어 있다.
-따라서 읽기파이프로 들어온 데이터가 Pager의 표준입력으로 들어간다.
+읽기파이프는 STDIN_FILENO 교체되어 있다.
+따라서 fd[1]에 write하면 자식프로세스의stdin으로 들어간다.
 */
 
 int main(int argc, char* argv[]) {
